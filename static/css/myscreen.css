@@ -1,0 +1,11 @@
+@import url("/css/myboth.css");
+
+body { background:black; color: #ddd; }
+h1, h2, h3, h4, h5, h6 { color: #eee; }
+a:focus, a:hover { color: #06c; }
+a { color: #09f; }
+.loud { color: #fff; }
+.box {
+    color: #222;
+    background: #e5eCf9;
+}
