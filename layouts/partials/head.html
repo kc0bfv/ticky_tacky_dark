@@ -1,8 +1,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<meta name="description" content="{{ .Params.description }}">
-<meta name="author" content="{{ .Params.author }}">
+{{- if isset .Params "description" -}} {{- $.Scratch.Set "description" .Params.description -}}
+{{- else -}}
+    {{- if isset .Site.Params "description" -}} {{- $.Scratch.Set "description" .Site.Params.description -}} {{- end -}}
+{{- end }}
+{{ with $.Scratch.Get "description" -}}<meta name="description" content="{{ . }}">{{- end }}
+{{- if isset .Params "author" -}} {{- $.Scratch.Set "author" .Params.author -}}
+{{- else -}}
+    {{- if isset .Site.Params "author" -}} {{- $.Scratch.Set "author" .Site.Params.author -}} {{- end -}}
+{{- end }}
+{{ with $.Scratch.Get "author" -}}<meta name="author" content="{{ . }}">{{- end }}
 <link rel="icon" href="/{{ .Site.Params.favicon }}">
 
 <title>{{ .Site.Title }}{{ with .Params.title }} - {{ . }}{{ end }}</title>
