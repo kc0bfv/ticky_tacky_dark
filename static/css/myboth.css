@@ -2,6 +2,7 @@
 #headerimg { width: 100%; }
 #footer { font-size: .8em; }
 #sideimage { width: 100%; }
+#full_body { max-width: 1024px; margin: auto; }
 
 /* Make my own styles up */
 .top-section { margin: 20px; }
