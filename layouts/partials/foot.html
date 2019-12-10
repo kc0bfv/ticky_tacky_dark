@@ -1,0 +1,37 @@
+<script>
+    function toggleDisplay( elementID ) {
+        elem = document.getElementById(elementID);
+        if( elem.style.display == "none" ) {
+            elem.style.display = "block";
+        } else if( elem.style.display == "block" ) {
+            elem.style.display = "none";
+        }
+    }
+    {{ with .Site.Params.headerimages }}
+    function randomHeaderImg() {
+        images = [
+            {{- $last_elem := sub (len .) 1 -}}
+            {{ range $index, $component := . -}}
+                {{ . | relURL }}{{ if lt $index $last_elem }},{{ end }}
+            {{- end -}}
+        ];
+        i = Math.ceil(Math.random() * images.length) - 1;
+        document.getElementById("headerimg").src = images[i];
+    }
+    window.onload = randomHeaderImg;
+    {{ end }}
+    {{ with .Params.sideimages }}
+    function randomSideAndHeaderImg() {
+        randomHeaderImg();
+        images = [
+            {{- $last_elem := sub (len .) 1 -}}
+            {{ range $index, $component := . -}}
+                {{ . | relURL }}{{ if lt $index $last_elem }},{{ end }}
+            {{- end -}}
+        ];
+        i = Math.ceil(Math.random() * images.length) - 1;
+        document.getElementById("sideimage").src = images[i];
+    }
+    window.onload = randomSideAndHeaderImg;
+    {{ end }}
+</script>

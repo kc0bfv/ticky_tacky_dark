@@ -1,0 +1,10 @@
+{{ define "main" }}
+    {{ range .Site.RegularPages.ByWeight }}
+        <div class="col col-12 col-lg-6 imgbtntxt">
+            <a class="imgbtntxt" href="{{ with .Params.actualurl }}{{ . | relURL }}{{ else }}{{ .Permalink | relURL }}{{ end }}">
+                <img class="morerounded" height="300" width="300" src="{{ .Params.buttonimage | relURL }}" alt="{{ .Title }}">
+                <br>{{ .Title }}
+            </a>
+        </div>
+    {{ end }}
+{{ end }}

@@ -1,0 +1,9 @@
+@import url("myboth.css");
+
+body { background:white; color: #000; }
+h1, h2, h3, h4, h5, h6 { color: #000; }
+a:focus, a:hover { color: #33f; }
+a { color:#33f; }
+.loud { color: #000; }
+.box { color: #000; }
+.navbar { display: none; }

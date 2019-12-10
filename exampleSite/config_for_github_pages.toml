@@ -1,0 +1,15 @@
+baseURL = "https://kc0bfv.github.io/ticky_tacky_dark/"
+languageCode = "en-us"
+title = "Ticky Tacky Dark"
+theme = "ticky_tacky_dark"
+#googleAnalytics = ""
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params]
+    favicon = "favicon.ico"
+    webmasterEmail = "kc0bfv@gmail.com"
+    description = "The demonstration page for the Hugo Ticky Tacky Dark theme."
+    author = "kc0bfv@gmail.com"
+    headerimages = ["/img/header01.jpg", "/img/header02.jpg"]
+    #msvalidate = ""
+    #googlesiteverification = ""

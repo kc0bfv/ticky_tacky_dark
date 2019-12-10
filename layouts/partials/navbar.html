@@ -1,0 +1,15 @@
+<div class="box morerounded">
+    <ul class="navbar">
+        {{- $pages := slice .Site.Home -}}
+        {{- $pages = $pages | append .Site.RegularPages.ByWeight -}}
+        {{ range $pages }}
+            <li>
+                {{- if eq . $ -}}
+                    {{ .Title }}
+                {{- else -}}
+                    <a href="{{ with .Params.actualurl }}{{ . | relURL }}{{ else }}{{ .Permalink }}{{ end }}">{{ .Title }}</a>
+                {{- end -}}
+            </li>
+        {{- end }}
+    </ul>
+</div>

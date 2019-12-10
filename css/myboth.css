@@ -1,0 +1,25 @@
+.box { padding-bottom:.25em; }
+#headerimg { width: 100%; }
+#footer { font-size: .8em; }
+#sideimage { width: 100%; }
+#full_body { max-width: 1024px; margin: auto; }
+
+/* Make my own styles up */
+.top-section { margin: 20px; }
+.morerounded { border-radius:15px; }
+.veryrounded { border-radius:30px; }
+.navbar {
+    list-style-type: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.imgbtntxt { text-align:center; font-size:1.5em; font-weight:normal; color:#999; text-decoration:none; }
+.abitbigger { font-size:1.3em; }
+.verylarge { font-size:2em; }
+
+/* Styles mimicing old blueprint */
+a:hover { text-decoration: none; }
+
+body {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
