@@ -5,19 +5,19 @@ Preview at <https://kc0bfv.github.io/ticky_tacky_dark>
 
 ## Configuration
 The exampleSite demonstrates the features unique to this theme.  In your site config params section the following extra parameters are supported:
-* favicon - the favicon URL, relative to your site (placed in header meta tag)
-* webmasterEmail - the webmaster email displayed in the footer
-* author - the author for the header meta tag
-* description - the description for the header meta tag
-* headerimages - a list of relative image URLs for the header of each page
-* msvalidate - MS validation tag
-* googlesiteverification - Google site verification tag
+* `favicon` - the favicon URL, relative to your site (placed in header meta tag)
+* `webmasterEmail` - the webmaster email displayed in the footer
+* `author` - the author for the header meta tag
+* `description` - the description for the header meta tag
+* `headerimages` - a list of relative image URLs for the header of each page
+* `msvalidate` - MS validation tag
+* `googlesiteverification` - Google site verification tag
 
 Pages you add have custom front matter options:
-* buttonimage - the relative image URL for the page's button on the front page
-* sideimages - a list of relative image URLs for the left sidebar on the page
-* sideimagealt - the alternate text for the page's left sidebar image
-* weight - an integer that specifies page ordering for the front page.  If you want the buttons and navbar items to show pages in a specific order, specify the ordering via weight.  Ordering goes from lowest weight to highest, left to right, top to bottom.
+* `buttonimage` - the relative image URL for the page's button on the front page
+* `sideimages` - a list of relative image URLs for the left sidebar on the page
+* `sideimagealt` - the alternate text for the page's left sidebar image
+* `weight` - an integer that specifies page ordering for the front page.  If you want the buttons and navbar items to show pages in a specific order, specify the ordering via weight.  Ordering goes from lowest weight to highest, left to right, top to bottom.
 
 ## Page Construction
 Navigation from the main page happens via a button image.  These images are, optimally, 300x300 pixels.  Specify these button image URLs in a page's front matter with the `buttonimage` option.
