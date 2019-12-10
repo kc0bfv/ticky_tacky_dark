@@ -11,12 +11,12 @@
     {{- if isset .Site.Params "author" -}} {{- $.Scratch.Set "author" .Site.Params.author -}} {{- end -}}
 {{- end }}
 {{ with $.Scratch.Get "author" -}}<meta name="author" content="{{ . }}">{{- end }}
-<link rel="icon" href="/{{ .Site.Params.favicon }}">
+<link rel="icon" href="{{ .Site.Params.favicon | relURL }}">
 
 <title>{{ .Site.Title }}{{ with .Params.title }} - {{ . }}{{ end }}</title>
 
 {{ with .Params.actualurl }}
-<meta http-equiv="refresh" content="0;URL='{{ . }}'" />
+<meta http-equiv="refresh" content="0;URL='{{ . | relURL }}'" />
 {{ end }}
 
 <!-- SEO Prefs -->
@@ -32,8 +32,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <!--My CSS-->
-<link rel="stylesheet" href="/css/myscreen.css" type="text/css" media="screen">
-<link rel="stylesheet" href="/css/myprint.css" type="text/css" media="print">
+<link rel="stylesheet" href="{{ "/css/myscreen.css" | relURL }}" type="text/css" media="screen">
+<link rel="stylesheet" href="{{ "/css/myprint.css" | relURL }}" type="text/css" media="print">
 <meta name="theme-color" content="black">
 
 {{ template "_internal/google_analytics_async.html" . }}

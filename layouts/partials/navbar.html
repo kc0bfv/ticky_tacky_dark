@@ -7,7 +7,7 @@
                 {{- if eq . $ -}}
                     {{ .Title }}
                 {{- else -}}
-                    <a href="{{ with .Params.actualurl }}{{ . }}{{ else }}{{ .Permalink }}{{ end }}">{{ .Title }}</a>
+                    <a href="{{ with .Params.actualurl }}{{ . | relURL }}{{ else }}{{ .Permalink }}{{ end }}">{{ .Title }}</a>
                 {{- end -}}
             </li>
         {{- end }}
