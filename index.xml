@@ -1,13 +1,57 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
-    <link>/</link>
-    <description>Recent content on </description>
+    <title>Main on Ticky Tacky Dark</title>
+    <link>https://kc0bfv.github.io/ticky_tacky_dark/</link>
+    <description>Recent content in Main on Ticky Tacky Dark</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 Dec 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kc0bfv.github.io/ticky_tacky_dark/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Awesome Page</title>
+      <link>https://kc0bfv.github.io/ticky_tacky_dark/awesome/</link>
+      <pubDate>Sun, 08 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kc0bfv.github.io/ticky_tacky_dark/awesome/</guid>
+      <description>Here&amp;rsquo;s some awesome text on an awesome page. That image on the left? It&amp;rsquo;ll randomly change on load between the ones in &amp;ldquo;sideimages&amp;rdquo;.
+
+Stuff that drops down when you click on it: This stuff drops down because you clicked on the text.</description>
+    </item>
+    
+    <item>
+      <title>Redirector - GoHugo</title>
+      <link>https://kc0bfv.github.io/ticky_tacky_dark/redir/</link>
+      <pubDate>Sun, 08 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kc0bfv.github.io/ticky_tacky_dark/redir/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interesting Page</title>
+      <link>https://kc0bfv.github.io/ticky_tacky_dark/interesting/</link>
+      <pubDate>Sun, 08 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kc0bfv.github.io/ticky_tacky_dark/interesting/</guid>
+      <description>Here&amp;rsquo;s some interesting text on an interesting page. That image on the left? It&amp;rsquo;ll randomly change on load between the ones in &amp;ldquo;sideimages&amp;rdquo;.
+
+Stuff that drops down when you click on it: This stuff drops down because you clicked on the text.</description>
+    </item>
+    
+    <item>
+      <title>Cool Page</title>
+      <link>https://kc0bfv.github.io/ticky_tacky_dark/cool/</link>
+      <pubDate>Sun, 08 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kc0bfv.github.io/ticky_tacky_dark/cool/</guid>
+      <description>Here&amp;rsquo;s some cool text on a cool page. That image on the left? It&amp;rsquo;ll randomly change on load between the ones in &amp;ldquo;sideimages&amp;rdquo;.
+
+Stuff that drops down when you click on it: This stuff drops down because you clicked on the text.</description>
+    </item>
     
   </channel>
 </rss>

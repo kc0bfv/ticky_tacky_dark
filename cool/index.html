@@ -6,7 +6,7 @@
 <meta name="author" content="kc0bfv@gmail.com">
 <link rel="icon" href="/ticky_tacky_dark/favicon.ico">
 
-<title>Ticky Tacky Dark</title>
+<title>Ticky Tacky Dark - Cool Page</title>
 
 
 
@@ -38,6 +38,11 @@
             }
         
         
+            #sideimage {
+                background-image: url(/img/cool01.jpg);
+                background-size: cover;
+            }
+        
     </style>
 </noscript>
 </head>
@@ -52,10 +57,17 @@
                             <div class="row">
     <div class="col-12 col-sm-5">
         
+            <img id="sideimage" class="morerounded" src="/ticky_tacky_dark/img/side_image_template.png" alt="Cool Page Image">
+        
     </div>
     <div class="col-12 col-sm-7">
-        <h1>404</h1>
-        <p>Content Not Found
+        <p>Here&rsquo;s some cool text on a cool page.  That image on the left?  It&rsquo;ll randomly change on load between the ones in &ldquo;sideimages&rdquo;.</p>
+
+<p><br><a href="javascript:toggleDisplay('drop_stuff');">Stuff that drops down when you click on it:</a>
+    <div id="drop_stuff" style="display:none">
+        This stuff drops down because you clicked on the text.
+    </div></p>
+
     </div>
 
                             </div>
@@ -66,7 +78,7 @@
             <li><a href="https://kc0bfv.github.io/ticky_tacky_dark/awesome/">Awesome Page</a></li>
             <li><a href="https://gohugo.io/">Redirector - GoHugo</a></li>
             <li><a href="https://kc0bfv.github.io/ticky_tacky_dark/interesting/">Interesting Page</a></li>
-            <li><a href="https://kc0bfv.github.io/ticky_tacky_dark/cool/">Cool Page</a></li>
+            <li>Cool Page</li>
     </ul>
 </div>
 </div>
@@ -91,6 +103,14 @@
     }
     window.onload = randomHeaderImg;
     
+    
+    function randomSideAndHeaderImg() {
+        randomHeaderImg();
+        images = ["/ticky_tacky_dark/img/cool01.jpg"];
+        i = Math.ceil(Math.random() * images.length) - 1;
+        document.getElementById("sideimage").src = images[i];
+    }
+    window.onload = randomSideAndHeaderImg;
     
 </script>
 </div>
