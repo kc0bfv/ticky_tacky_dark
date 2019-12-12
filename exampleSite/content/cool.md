@@ -1,5 +1,5 @@
 ---
-title: "Cool Page"
+title: "Stunning"
 date: 2019-12-08T00:00:00-00:00
 buttonimage: "/img/coolbutton.jpg"
 sideimages: ["/img/cool01.jpg"]
