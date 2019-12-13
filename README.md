@@ -1,5 +1,5 @@
 # Ticky Tacky Dark - Theme for Hugo
-This is a multi-page theme, where the list page displays a set of image buttons linking to your sub-pages.
+This is a multi-page theme, where the list page displays a set of image buttons linking to your sub-pages.  It passes the [web accessibility evaluation tool tests](https://wave.webaim.org/).
 
 Preview at <https://kc0bfv.github.io/ticky_tacky_dark>
 
