@@ -2,8 +2,9 @@
 
 body { background:black; color: #ddd; }
 h1, h2, h3, h4, h5, h6 { color: #eee; }
+ul.navbar a:focus, ul.navbar a:hover { color: #00243d; }
 a:focus, a:hover { color: #06c; }
-a { color: #09f; }
+a { color: #00497a; }
 .loud { color: #fff; }
 .box {
     color: #222;
