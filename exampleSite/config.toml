@@ -10,6 +10,6 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     webmasterEmail = "kc0bfv@gmail.com"
     description = "The demonstration page for the Hugo Ticky Tacky Dark theme."
     author = "kc0bfv@gmail.com"
-    headerimages = ["/img/header01.jpg", "/img/header02.jpg"]
+    headerimages = ["img/header01.jpg", "img/header02.jpg"]
     #msvalidate = ""
     #googlesiteverification = ""

@@ -1,8 +1,8 @@
 ---
 title: "Fascinating"
 date: 2019-12-08T00:00:00-00:00
-buttonimage: "/img/interestingbutton.jpg"
-sideimages: ["/img/interesting01.jpg"]
+buttonimage: "img/interestingbutton.jpg"
+sideimages: ["img/interesting01.jpg"]
 sideimagealt: "Interesting Page Image"
 draft: false
 weight: 3
