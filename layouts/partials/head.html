@@ -42,13 +42,13 @@
     <style>
         {{ with .Site.Params.headerimages }}
             #headerimg {
-                background-image: url({{ index . 0 | safeURL }});
+                background-image: url({{ index . 0 | safeURL | relURL }});
                 background-size: cover;
             }
         {{ end }}
         {{ with .Params.sideimages }}
             #sideimage {
-                background-image: url({{ index . 0 | safeURL }});
+                background-image: url({{ index . 0 | safeURL | relURL }});
                 background-size: cover;
             }
         {{ end }}
