@@ -33,13 +33,13 @@
     <style>
         
             #headerimg {
-                background-image: url(/ticky_tacky_dark/img/header01.jpg);
+                background-image: url(https://kc0bfv.github.io/ticky_tacky_dark/img/header01.jpg);
                 background-size: cover;
             }
         
         
             #sideimage {
-                background-image: url(/ticky_tacky_dark/img/awesome01.jpg);
+                background-image: url(https://kc0bfv.github.io/ticky_tacky_dark/img/awesome01.jpg);
                 background-size: cover;
             }
         
@@ -97,7 +97,7 @@
     }
     
     function randomHeaderImg() {
-        images = ["/ticky_tacky_dark/img/header01.jpg","/ticky_tacky_dark/img/header02.jpg"];
+        images = ["https://kc0bfv.github.io/ticky_tacky_dark/img/header01.jpg","https://kc0bfv.github.io/ticky_tacky_dark/img/header02.jpg"];
         i = Math.ceil(Math.random() * images.length) - 1;
         document.getElementById("headerimg").src = images[i];
     }
@@ -106,7 +106,7 @@
     
     function randomSideAndHeaderImg() {
         randomHeaderImg();
-        images = ["/ticky_tacky_dark/img/awesome01.jpg","/ticky_tacky_dark/img/awesome02.jpg"];
+        images = ["https://kc0bfv.github.io/ticky_tacky_dark/img/awesome01.jpg","https://kc0bfv.github.io/ticky_tacky_dark/img/awesome02.jpg"];
         i = Math.ceil(Math.random() * images.length) - 1;
         document.getElementById("sideimage").src = images[i];
     }
