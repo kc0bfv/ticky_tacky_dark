@@ -9,7 +9,8 @@ weight: 3
 ---
 Here's some interesting text on an interesting page.  That image on the left?  It'll randomly change on load between the ones in "sideimages".
 
-<br><a href="javascript:toggleDisplay('drop_stuff');">Stuff that drops down when you click on it:</a>
-	<div id="drop_stuff" style="display:none">
-        This stuff drops down because you clicked on the text.
-	</div>
+{{< dropdown/link togglename="dropstuff" linktext="Stuff that drops down when you click on it top:" >}}
+
+{{< dropdown/content togglename="dropstuff" >}}
+    This stuff drops down because you clicked on the text.
+{{< /dropdown/content >}}
