@@ -31,6 +31,24 @@ On sub-pages, images can appear on the left side.  Sizing can vary there, but at
 
 Header images are, optimally, 950x200 pixels.  Specify these in the site configuration as a list of image URLs with option `headerimages`.  One will be randomly selected on page load.
 
+## Custom Shortcode
+
+### Dropdown Text
+
+To add a link that, when clicked, drops-down a section of text, use shortcode `dropdown/link` and shortcode `dropdown/content`.
+
+**Example**
+
+```
+{{< dropdown/link togglename="dropNum1" linktext="Click here to see the text that will drop down." >}}
+```
+
+```
+{{< dropdown/content togglename="dropNum1" >}}
+  This is the text that drops down when you click the link.
+{{< /dropdown/content >}}
+```
+
 ## Usage
 
 Put this theme in your site's themes folder, then modify the site config to specify the theme `ticky_tacky_tark`, or use the `-t ticky_tacky_dark` command line switch.
