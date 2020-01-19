@@ -1,3 +1,3 @@
 [submodule "ticky_tacky_dark"]
-	path = ticky_tacky_dark
+	path = theme_directory
 	url = https://github.com/kc0bfv/ticky_tacky_dark.git

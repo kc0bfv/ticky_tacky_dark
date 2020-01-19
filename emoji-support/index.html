@@ -2,11 +2,11 @@
 <html lang="en-us">
     <head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="The demonstration page for the Hugo Ticky Tacky Dark theme.">
-<meta name="author" content="kc0bfv@gmail.com">
+<meta name="description" content="Guide to emoji usage in Hugo">
+<meta name="author" content="Hugo Authors">
 <link rel="icon" href="/ticky_tacky_dark/favicon.ico">
 
-<title>Ticky Tacky Dark - Fascinating</title>
+<title>Ticky Tacky Dark - Emoji Support</title>
 
 
 
@@ -39,7 +39,7 @@
         
         
             #sideimage {
-                background-image: url(https://kc0bfv.github.io/ticky_tacky_dark/img/interesting01.jpg);
+                background-image: url(https://kc0bfv.github.io/ticky_tacky_dark/img/cool01.jpg);
                 background-size: cover;
             }
         
@@ -57,20 +57,37 @@
                             <main class="row">
     <div class="col-12 col-sm-5">
         
-            <img id="sideimage" class="morerounded" src="/ticky_tacky_dark/img/side_image_template.png" alt="Interesting Page Image">
+            <img id="sideimage" class="morerounded" src="/ticky_tacky_dark/img/side_image_template.png" alt="Cool Page Image">
         
     </div>
     <div class="col-12 col-sm-7">
-        <p>Here&rsquo;s some interesting text on an interesting page.  That image on the left?  It&rsquo;ll randomly change on load between the ones in &ldquo;sideimages&rdquo;.</p>
+        <p>Emoji can be enabled in a Hugo project in a number of ways.</p>
 
-<a href="javascript:toggleDisplay('dropstuff');">Stuff that drops down when you click on it top:</a>
+<p>The <a href="https://gohugo.io/functions/emojify/"><code>emojify</code></a> function can be called directly in templates or <a href="https://gohugo.io/templates/shortcode-templates/#inline-shortcodes">Inline Shortcodes</a>.</p>
+
+<p>To enable emoji globally, set <code>enableEmoji</code> to <code>true</code> in your site’s <a href="https://gohugo.io/getting-started/configuration/">configuration</a> and then you can type emoji shorthand codes directly in content files; e.g.</p>
+
+<p><p><span class="nowrap"><span class="emojify">🙈</span> <code>:see_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙉</span> <code>:hear_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙊</span> <code>:speak_no_evil:</code></span></p>
+<br></p>
+
+<p>The <a href="http://www.emoji-cheat-sheet.com/">Emoji cheat sheet</a> is a useful reference for emoji shorthand codes.</p>
+
+<hr />
+
+<p><strong>N.B.</strong> The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">.emoji {
+font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols;
+}</code></pre></div>
+
+
+
+<a href="javascript:toggleDisplay('dropstuff');">This demonstrates the dropdown shortcode.  Click this.</a>
 
 
 <div id="dropstuff" style="display:none">
     This stuff drops down because you clicked on the text.
 </div>
-
-
     </div>
 
                             </main>
@@ -78,10 +95,12 @@
                         <nav class="col col-8 offset-2 col-sm-4 offset-sm-0 col-lg-3"><div class="box morerounded">
     <ul class="navbar">
             <li><a href="https://kc0bfv.github.io/ticky_tacky_dark/">Main</a></li>
-            <li><a href="https://kc0bfv.github.io/ticky_tacky_dark/awesome/">Awesome</a></li>
+            <li><a href="https://kc0bfv.github.io/ticky_tacky_dark/about/">About</a></li>
             <li><a href="https://github.com/kc0bfv/ticky_tacky_dark">Theme Source</a></li>
-            <li>Fascinating</li>
-            <li><a href="https://kc0bfv.github.io/ticky_tacky_dark/cool/">Stunning</a></li>
+            <li><a href="https://kc0bfv.github.io/ticky_tacky_dark/markdown-syntax/">Markdown Syntax Guide</a></li>
+            <li>Emoji Support</li>
+            <li><a href="https://kc0bfv.github.io/ticky_tacky_dark/rich-content/">Rich Content</a></li>
+            <li><a href="https://kc0bfv.github.io/ticky_tacky_dark/math-typesetting/">Math Typesetting</a></li>
     </ul>
 </div>
 </nav>
@@ -109,7 +128,7 @@
     
     function randomSideAndHeaderImg() {
         randomHeaderImg();
-        images = ["https://kc0bfv.github.io/ticky_tacky_dark/img/interesting01.jpg"];
+        images = ["https://kc0bfv.github.io/ticky_tacky_dark/img/cool01.jpg"];
         i = Math.ceil(Math.random() * images.length) - 1;
         document.getElementById("sideimage").src = images[i];
     }

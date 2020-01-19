@@ -2,11 +2,11 @@
 <html lang="en-us">
     <head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="The demonstration page for the Hugo Ticky Tacky Dark theme.">
-<meta name="author" content="kc0bfv@gmail.com">
+<meta name="description" content="A brief guide to setup KaTeX">
+<meta name="author" content="Hugo Authors">
 <link rel="icon" href="/ticky_tacky_dark/favicon.ico">
 
-<title>Ticky Tacky Dark - Stunning</title>
+<title>Ticky Tacky Dark - Math Typesetting</title>
 
 
 
@@ -39,7 +39,7 @@
         
         
             #sideimage {
-                background-image: url(https://kc0bfv.github.io/ticky_tacky_dark/img/cool01.jpg);
+                background-image: url(https://kc0bfv.github.io/ticky_tacky_dark/img/math01.jpg);
                 background-size: cover;
             }
         
@@ -57,20 +57,42 @@
                             <main class="row">
     <div class="col-12 col-sm-5">
         
-            <img id="sideimage" class="morerounded" src="/ticky_tacky_dark/img/side_image_template.png" alt="Cool Page Image">
+            <img id="sideimage" class="morerounded" src="/ticky_tacky_dark/img/side_image_template.png" alt="A binary text wall covering from the computer history museum.">
         
     </div>
     <div class="col-12 col-sm-7">
-        <p>Here&rsquo;s some cool text on a cool page.  That image on the left?  It&rsquo;ll randomly change on load between the ones in &ldquo;sideimages&rdquo;.</p>
+        <p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p>
 
-<a href="javascript:toggleDisplay('dropstuff');">Stuff that drops down when you click on it top:</a>
+<p>In this example we will be using <a href="https://katex.org/">KaTeX</a></p>
 
+<ul>
+<li>Create a partial under <code>/layouts/partials/math.html</code></li>
+<li>Within this partial reference the <a href="https://katex.org/docs/autorender.html">Auto-render Extension</a> or host these scripts locally.</li>
+<li>Include the partial in your templates like so:<br></li>
+</ul>
 
-<div id="dropstuff" style="display:none">
-    This stuff drops down because you clicked on the text.
-</div>
+<pre><code>{{ if or .Params.math .Site.Params.math }}
+{{ partial &quot;math.html&quot; . }}
+{{ end }}
+</code></pre>
 
+<ul>
+<li>To enable KaTex globally set the parameter <code>math</code> to <code>true</code> in a project's configuration</li>
+<li>To enable KaTex on a per page basis include the parameter <code>math: true</code> in content files.</li>
+</ul>
 
+<p><strong>Note:</strong> Use the online reference of <a href="https://katex.org/docs/supported.html">Supported TeX Functions</a>
+</p>
+
+<h3 id="examples">Examples</h3>
+
+<p>Inline math: <span  class="math">\( \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… \)</span></p>
+
+<p>Block math:</p>
+
+<p><span  class="math">\[
+ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
+\]</span></p>
     </div>
 
                             </main>
@@ -78,10 +100,12 @@
                         <nav class="col col-8 offset-2 col-sm-4 offset-sm-0 col-lg-3"><div class="box morerounded">
     <ul class="navbar">
             <li><a href="https://kc0bfv.github.io/ticky_tacky_dark/">Main</a></li>
-            <li><a href="https://kc0bfv.github.io/ticky_tacky_dark/awesome/">Awesome</a></li>
+            <li><a href="https://kc0bfv.github.io/ticky_tacky_dark/about/">About</a></li>
             <li><a href="https://github.com/kc0bfv/ticky_tacky_dark">Theme Source</a></li>
-            <li><a href="https://kc0bfv.github.io/ticky_tacky_dark/interesting/">Fascinating</a></li>
-            <li>Stunning</li>
+            <li><a href="https://kc0bfv.github.io/ticky_tacky_dark/markdown-syntax/">Markdown Syntax Guide</a></li>
+            <li><a href="https://kc0bfv.github.io/ticky_tacky_dark/emoji-support/">Emoji Support</a></li>
+            <li><a href="https://kc0bfv.github.io/ticky_tacky_dark/rich-content/">Rich Content</a></li>
+            <li>Math Typesetting</li>
     </ul>
 </div>
 </nav>
@@ -109,7 +133,7 @@
     
     function randomSideAndHeaderImg() {
         randomHeaderImg();
-        images = ["https://kc0bfv.github.io/ticky_tacky_dark/img/cool01.jpg"];
+        images = ["https://kc0bfv.github.io/ticky_tacky_dark/img/math01.jpg"];
         i = Math.ceil(Math.random() * images.length) - 1;
         document.getElementById("sideimage").src = images[i];
     }

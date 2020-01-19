@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kc0bfv.github.io/ticky_tacky_dark/awesome/</loc>
+    <loc>https://kc0bfv.github.io/ticky_tacky_dark/about/</loc>
     <lastmod>2019-12-08T00:00:00+00:00</lastmod>
   </url>
   
@@ -13,13 +13,22 @@
   </url>
   
   <url>
-    <loc>https://kc0bfv.github.io/ticky_tacky_dark/interesting/</loc>
+    <loc>https://kc0bfv.github.io/ticky_tacky_dark/markdown-syntax/</loc>
     <lastmod>2019-12-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kc0bfv.github.io/ticky_tacky_dark/cool/</loc>
+    <loc>https://kc0bfv.github.io/ticky_tacky_dark/emoji-support/</loc>
     <lastmod>2019-12-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kc0bfv.github.io/ticky_tacky_dark/rich-content/</loc>
+  </url>
+  
+  <url>
+    <loc>https://kc0bfv.github.io/ticky_tacky_dark/math-typesetting/</loc>
+    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
