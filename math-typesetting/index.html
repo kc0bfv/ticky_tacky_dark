@@ -17,7 +17,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.58.3">
+<meta name="generator" content="Hugo 0.63.1">
 
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -70,12 +70,9 @@
 <li>Within this partial reference the <a href="https://katex.org/docs/autorender.html">Auto-render Extension</a> or host these scripts locally.</li>
 <li>Include the partial in your templates like so:<br></li>
 </ul>
-
 <pre><code>{{ if or .Params.math .Site.Params.math }}
-{{ partial &quot;math.html&quot; . }}
-{{ end }}
-</code></pre>
-
+{{ partial "math.html" . }}
+{{ end }}</code></pre>
 <ul>
 <li>To enable KaTex globally set the parameter <code>math</code> to <code>true</code> in a project's configuration</li>
 <li>To enable KaTex on a per page basis include the parameter <code>math: true</code> in content files.</li>
