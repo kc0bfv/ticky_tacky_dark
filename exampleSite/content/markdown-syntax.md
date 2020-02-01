@@ -1,5 +1,6 @@
 ---
-author: "Hugo Authors"
+author:
+    name: "Hugo Authors"
 title: "Markdown Syntax Guide"
 description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
 tags: [
@@ -12,13 +13,12 @@ categories: [
     "themes",
     "syntax",
 ]
-series: ["Themes Guide"]
 aliases: ["migrate-from-jekyl"]
 
 date: 2019-12-08T00:00:00-00:00
 buttonimage: "img/interestingbutton.jpg"
-sideimages: ["img/interesting01.jpg"]
-sideimagealt: "Interesting Page Image"
+images: ["img/interesting01.jpg"]
+imagealt: "Interesting Page Image"
 draft: false
 weight: 3
 ---

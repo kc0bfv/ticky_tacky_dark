@@ -1,11 +1,12 @@
 ---
-author: Hugo Authors
+author:
+    name: Hugo Authors
 title: Math Typesetting
 date: 2019-03-08
 description: A brief guide to setup KaTeX
 buttonimage: "img/mathbutton.jpg"
-sideimages: ["img/math01.jpg"]
-sideimagealt: "A binary text wall covering from the computer history museum."
+images: ["img/math01.jpg"]
+imagealt: "A binary text wall covering from the computer history museum."
 markup: mmark
 math: true
 weight: 6

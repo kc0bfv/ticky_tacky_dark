@@ -1,7 +1,7 @@
 {{ define "main" }}
     <div class="col-12 col-sm-5">
-        {{ with .Params.sideimages }}
-            <img id="sideimage" class="morerounded" src="{{ "img/side_image_template.png" | relURL }}" alt="{{ $.Params.sideimagealt }}">
+        {{ with .Params.images }}
+            <img id="sideimage" class="morerounded" src="{{ "img/side_image_template.png" | relURL }}" alt="{{ $.Params.imagealt }}">
         {{ end }}
     </div>
     <div class="col-12 col-sm-7">

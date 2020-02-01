@@ -1,1 +1,1 @@
-{{ with .Site.Params.webmasterEmail }}Webmaster: <a href="mailto:{{ . }}">{{ . }}</a>{{ end }}
+{{ with .Site.Author.email }}Webmaster: <a href="mailto:{{ . }}">{{ . }}</a>{{ end }}

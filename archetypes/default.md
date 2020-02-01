@@ -3,8 +3,8 @@ title: "title"
 date: {{ .Date }}
 draft: false
 buttonimage: ""
-sideimages: []
-sideimagealt: ""
+images: []
+imagealt: ""
 weight: 1
 ---
 

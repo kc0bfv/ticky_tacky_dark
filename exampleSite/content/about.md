@@ -2,11 +2,12 @@
 title: "About"
 description: "Hugo, the world’s fastest framework for building websites"
 aliases: ["about-us","about-hugo","contact"]
-author: "Hugo Authors"
+author:
+    name: "Hugo Authors"
 date: 2019-12-08T00:00:00-00:00
 buttonimage: "img/awebutton.jpg"
-sideimages: ["img/awesome01.jpg", "img/awesome02.jpg"]
-sideimagealt: "Awesome Page Image"
+images: ["img/awesome01.jpg", "img/awesome02.jpg"]
+imagealt: "Awesome Page Image"
 draft: false
 weight: 1
 ---
