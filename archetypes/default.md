@@ -1,5 +1,5 @@
 ---
-title: "title"
+title: "{{ .Name | humanize | title }}"
 date: {{ .Date }}
 draft: false
 buttonimage: ""
