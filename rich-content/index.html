@@ -2,32 +2,33 @@
 <html lang="en-us">
     <head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Ticky Tacky Dark - Rich Content</title>
 <meta name="description" content="A brief description of Hugo Shortcodes">
 <meta name="author" content="Hugo Authors">
-<link rel="icon" href="/ticky_tacky_dark/favicon.ico">
+<link rel="icon" href="/ticky_tacky_dark/favicon.ico"><meta property="og:title" content="Rich Content" />
+<meta property="og:description" content="A brief description of Hugo Shortcodes" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kc0bfv.github.io/ticky_tacky_dark/rich-content/" />
+<meta property="og:image" content="https://kc0bfv.github.io/ticky_tacky_dark/img/rich01.jpg" />
 
-<title>Ticky Tacky Dark - Rich Content</title>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://kc0bfv.github.io/ticky_tacky_dark/img/rich01.jpg"/>
 
-
+<meta name="twitter:title" content="Rich Content"/>
+<meta name="twitter:description" content="A brief description of Hugo Shortcodes"/>
 
 
 <meta name="robots" content="index,follow">
 <meta name="referrer" content="origin-when-cross-origin">
 
 
-
-
-<meta name="generator" content="Hugo 0.63.1">
-
+<meta name="generator" content="Hugo 0.63.2" />
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
 
 <link rel="stylesheet" href="/ticky_tacky_dark/css/myscreen.css" type="text/css" media="screen">
 <link rel="stylesheet" href="/ticky_tacky_dark/css/myprint.css" type="text/css" media="print">
 <meta name="theme-color" content="black">
-
-
 
 <noscript>
     <style>
@@ -45,6 +46,55 @@
         
     </style>
 </noscript>
+
+<script>
+    function toggleDisplay( elementID ) {
+        elem = document.getElementById(elementID);
+        if( elem.style.display == "none" ) {
+            elem.style.display = "block";
+        } else if( elem.style.display == "block" ) {
+            elem.style.display = "none";
+        }
+    }
+    
+    function randomHeaderImg() {
+        let images = ["https://kc0bfv.github.io/ticky_tacky_dark/img/header01.jpg","https://kc0bfv.github.io/ticky_tacky_dark/img/header02.jpg"];
+        let img_ind = Math.ceil(Math.random() * images.length) - 1;
+        let sel_url = images[img_ind]
+        let img = new Image();
+        img.onload = function() {
+            function set_img(old_onload) {
+                let element = document.getElementById("headerimg");
+                element.src = sel_url;
+                if( old_onload ){ old_onload() }
+            }
+            if( document.readyState === "complete" ) { set_img() }
+            else { window.onload = set_img(window.onload) }
+        }
+        img.src = sel_url;
+    }
+    randomHeaderImg();
+    
+    
+    function randomSideImg() {
+        let images = ["https://kc0bfv.github.io/ticky_tacky_dark/img/rich01.jpg"];
+        let img_ind = Math.ceil(Math.random() * images.length) - 1;
+        let sel_url = images[img_ind]
+        let img = new Image();
+        img.onload = function() {
+            function set_img(old_onload) {
+                let element = document.getElementById("sideimage");
+                element.src = sel_url;
+                if( old_onload ){ old_onload() }
+            }
+            if( document.readyState === "complete" ) { set_img() }
+            else { window.onload = set_img(window.onload) }
+        }
+        img.src = sel_url;
+    }
+    randomSideImg();
+    
+</script>
 </head>
     <body>
         <div id="full_body">
@@ -89,7 +139,7 @@
 	<div class="card-header">
     <a href="https://www.instagram.com/koloot.design" class="card-link">koloot.design</a>
   </div>
-	<a href="https://instagram.com/p/BGvuInzyFAe/" rel="noopener" target="_blank"><img class="card-img-top img-fluid" src="https://scontent-ort2-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/13437259_1631155187211476_646101738_n.jpg?_nc_ht=scontent-ort2-2.cdninstagram.com&amp;_nc_cat=108&amp;_nc_ohc=feZCxlyiJ54AX8n3FDD&amp;oh=bf9b4fa6ccd7aa282253a32339e55b3f&amp;oe=5EC3AE71" width="640"  height="451" alt="Instagram Image"></a>
+	<a href="https://instagram.com/p/BGvuInzyFAe/" rel="noopener" target="_blank"><img class="card-img-top img-fluid" src="https://scontent-atl3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/13437259_1631155187211476_646101738_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&amp;_nc_cat=108&amp;_nc_ohc=ARYfDy72yyYAX_GTlzj&amp;oh=d0f0036878758ce4afd58831de58188a&amp;oe=5EC3AE71" width="640"  height="451" alt="Instagram Image"></a>
 	<div class="card-body">
 		
 		<a href="https://www.instagram.com/koloot.design" class="card-link">View More on Instagram</a>
@@ -191,33 +241,6 @@
                 </div>
             </div>
             <footer id="footer" class="top-section">Webmaster: <a href="mailto:kc0bfv@gmail.com">kc0bfv@gmail.com</a>
-</footer><script>
-    function toggleDisplay( elementID ) {
-        elem = document.getElementById(elementID);
-        if( elem.style.display == "none" ) {
-            elem.style.display = "block";
-        } else if( elem.style.display == "block" ) {
-            elem.style.display = "none";
-        }
-    }
-    
-    function randomHeaderImg() {
-        images = ["https://kc0bfv.github.io/ticky_tacky_dark/img/header01.jpg","https://kc0bfv.github.io/ticky_tacky_dark/img/header02.jpg"];
-        i = Math.ceil(Math.random() * images.length) - 1;
-        document.getElementById("headerimg").src = images[i];
-    }
-    window.onload = randomHeaderImg;
-    
-    
-    function randomSideAndHeaderImg() {
-        randomHeaderImg();
-        images = ["https://kc0bfv.github.io/ticky_tacky_dark/img/rich01.jpg"];
-        i = Math.ceil(Math.random() * images.length) - 1;
-        document.getElementById("sideimage").src = images[i];
-    }
-    window.onload = randomSideAndHeaderImg;
-    
-</script>
-</div>
+</footer></div>
     </body>
 </html>

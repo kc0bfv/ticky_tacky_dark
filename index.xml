@@ -6,6 +6,8 @@
     <description>Recent content in Main on Ticky Tacky Dark</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <managingEditor>kc0bfv@gmail.com (Karl Sickendick)</managingEditor>
+    <webMaster>kc0bfv@gmail.com (Karl Sickendick)</webMaster>
     <lastBuildDate>Sun, 08 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kc0bfv.github.io/ticky_tacky_dark/index.xml" rel="self" type="application/rss+xml" />
@@ -15,7 +17,7 @@
       <title>About</title>
       <link>https://kc0bfv.github.io/ticky_tacky_dark/about/</link>
       <pubDate>Sun, 08 Dec 2019 00:00:00 +0000</pubDate>
-      
+      <author>kc0bfv@gmail.com (Karl Sickendick)</author>
       <guid>https://kc0bfv.github.io/ticky_tacky_dark/about/</guid>
       <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
 Hugo makes use of a variety of open source projects including:
@@ -26,7 +28,7 @@ Hugo makes use of a variety of open source projects including:
       <title>Theme Source</title>
       <link>https://kc0bfv.github.io/ticky_tacky_dark/redir/</link>
       <pubDate>Sun, 08 Dec 2019 00:00:00 +0000</pubDate>
-      
+      <author>kc0bfv@gmail.com (Karl Sickendick)</author>
       <guid>https://kc0bfv.github.io/ticky_tacky_dark/redir/</guid>
       <description></description>
     </item>
@@ -35,7 +37,7 @@ Hugo makes use of a variety of open source projects including:
       <title>Markdown Syntax Guide</title>
       <link>https://kc0bfv.github.io/ticky_tacky_dark/markdown-syntax/</link>
       <pubDate>Sun, 08 Dec 2019 00:00:00 +0000</pubDate>
-      
+      <author>kc0bfv@gmail.com (Karl Sickendick)</author>
       <guid>https://kc0bfv.github.io/ticky_tacky_dark/markdown-syntax/</guid>
       <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
@@ -44,7 +46,7 @@ Hugo makes use of a variety of open source projects including:
       <title>Emoji Support</title>
       <link>https://kc0bfv.github.io/ticky_tacky_dark/emoji-support/</link>
       <pubDate>Sun, 08 Dec 2019 00:00:00 +0000</pubDate>
-      
+      <author>kc0bfv@gmail.com (Karl Sickendick)</author>
       <guid>https://kc0bfv.github.io/ticky_tacky_dark/emoji-support/</guid>
       <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
     </item>
@@ -53,7 +55,7 @@ Hugo makes use of a variety of open source projects including:
       <title>Rich Content</title>
       <link>https://kc0bfv.github.io/ticky_tacky_dark/rich-content/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
+      <author>kc0bfv@gmail.com (Karl Sickendick)</author>
       <guid>https://kc0bfv.github.io/ticky_tacky_dark/rich-content/</guid>
       <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
     </item>
@@ -62,7 +64,7 @@ Hugo makes use of a variety of open source projects including:
       <title>Math Typesetting</title>
       <link>https://kc0bfv.github.io/ticky_tacky_dark/math-typesetting/</link>
       <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-      
+      <author>kc0bfv@gmail.com (Karl Sickendick)</author>
       <guid>https://kc0bfv.github.io/ticky_tacky_dark/math-typesetting/</guid>
       <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
     </item>
