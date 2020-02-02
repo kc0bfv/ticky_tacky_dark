@@ -4,6 +4,7 @@ title = "Ticky Tacky Dark"
 theme = "ticky_tacky_dark"
 #googleAnalytics = ""
 disableKinds = ["taxonomy", "taxonomyTerm"]
+enableEmoji = true
 
 [params]
     favicon = "favicon.ico"

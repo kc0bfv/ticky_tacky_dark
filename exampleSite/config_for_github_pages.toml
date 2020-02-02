@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "Ticky Tacky Dark"
 theme = "ticky_tacky_dark"
 #googleAnalytics = ""
+enableEmoji = true
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]

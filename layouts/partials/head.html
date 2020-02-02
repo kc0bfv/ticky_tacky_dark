@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>{{ .Site.Title }}{{ with .Params.title }} - {{ . }}{{ end }}</title>
-{{ $description := .Params.description | default .Site.Params.description }}
+{{ $description := $.Param "description" }}
 {{- with $description }}<meta name="description" content="{{ . }}">{{ end }}
 {{ $author := .Params.author.name | default .Site.Author.name }}
 {{- with $author }}<meta name="author" content="{{ . }}">{{ end }}
