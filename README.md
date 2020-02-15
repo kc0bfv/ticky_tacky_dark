@@ -36,18 +36,14 @@ Header images are, optimally, 950x200 pixels.  Specify these in the site configu
 
 ### Dropdown Text
 
-To add a link that, when clicked, drops-down a section of text, use shortcode `dropdown/link` and shortcode `dropdown/content`.
+To add an HTML details element that, when clicked, drops-down a section of text, use shortcode `dropdown`.
 
 **Example**
 
 ```
-{{< dropdown/link togglename="dropNum1" linktext="Click here to see the text that will drop down." >}}
-```
-
-```
-{{< dropdown/content togglename="dropNum1" >}}
+{{< dropdown summary="Click here to see the text that will drop down." >}}
   This is the text that drops down when you click the link.
-{{< /dropdown/content >}}
+{{< /dropdown >}}
 ```
 
 ## Usage

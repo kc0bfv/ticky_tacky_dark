@@ -45,14 +45,6 @@
 </noscript>
 
 <script>
-    function toggleDisplay( elementID ) {
-        elem = document.getElementById(elementID);
-        if( elem.style.display == "none" ) {
-            elem.style.display = "block";
-        } else if( elem.style.display == "block" ) {
-            elem.style.display = "none";
-        }
-    }
     {{ with .Site.Params.images }}
     function randomHeaderImg() {
         let images = [

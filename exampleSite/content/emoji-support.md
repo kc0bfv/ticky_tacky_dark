@@ -53,8 +53,6 @@ font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,And
 </style>
 {{< /css.inline >}}
 
-{{< dropdown/link togglename="dropstuff" linktext="This demonstrates the dropdown shortcode.  Click this." >}}
-
-{{< dropdown/content togglename="dropstuff" >}}
+{{< dropdown summary="This demonstrates the dropdown shortcode.  Click this." >}}
     This stuff drops down because you clicked on the text.
-{{< /dropdown/content >}}
+{{< /dropdown >}}
