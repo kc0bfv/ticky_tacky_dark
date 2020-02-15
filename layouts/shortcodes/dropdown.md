@@ -1,4 +1,4 @@
 <details>
     <summary>{{ .Get "summary" }}</summary>
-    {{ .Inner }}
+    {{ .Inner | markdownify }}
 </details>

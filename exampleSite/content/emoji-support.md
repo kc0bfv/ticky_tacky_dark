@@ -54,5 +54,10 @@ font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,And
 {{< /css.inline >}}
 
 {{< dropdown summary="This demonstrates the dropdown shortcode.  Click this." >}}
-    This stuff drops down because you clicked on the text.
+* This stuff drops down because you clicked on the text.
+* Markdown is supported in here.
+
+```
+# Code sections can go in here too
+```
 {{< /dropdown >}}
