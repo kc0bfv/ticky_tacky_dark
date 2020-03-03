@@ -5,6 +5,7 @@
         <div id="full_body">
             <header id="header" class="top-section">
                 {{- partial "body_header.html" . -}}
+                {{ with $.Param "headername" }}<div id="header-text">{{ . }}</div>{{ end -}}
             </header>
             <div id="content" class="top-section">
                 <div class="container-fluid">

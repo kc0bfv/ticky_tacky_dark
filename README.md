@@ -11,6 +11,7 @@ The exampleSite demonstrates the features unique to this theme.  In your site co
 * `favicon` - the favicon URL, relative to your site (placed in header meta tag)
 * `description` - the description for the header meta tag
 * `images` - a list of relative image URLs for the header of each page
+* `headername` - text to place over the header images
 * `msvalidate` - MS validation tag
 * `googlesiteverification` - Google site verification tag
 
@@ -49,3 +50,7 @@ To add an HTML details element that, when clicked, drops-down a section of text,
 ## Usage
 
 Put this theme in your site's themes folder, then modify the site config to specify the theme `ticky_tacky_tark`, or use the `-t ticky_tacky_dark` command line switch.
+
+## Licenses
+
+The [Ubuntu Titling font](https://en.wikipedia.org/wiki/Ubuntu_Titling) is used, licensed by the GNU Lesser GPL, license included.

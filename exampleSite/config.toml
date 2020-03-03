@@ -10,6 +10,7 @@ enableEmoji = true
     favicon = "favicon.ico"
     description = "The demonstration page for the Hugo Ticky Tacky Dark theme."
     images = ["img/header01.jpg", "img/header02.jpg"]
+    headername = "tickytackydark"
     #msvalidate = ""
     #googlesiteverification = ""
 
