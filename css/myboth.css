@@ -7,7 +7,7 @@
 /* Make my own styles up */
 @font-face {
     font-family: "Ubuntu-Titling";
-    src: url("/font/ubuntu-titling/UbuntuTitling-Bold.ttf") format("truetype");
+    src: url("../font/ubuntu-titling/UbuntuTitling-Bold.ttf") format("truetype");
 }
 
 .top-section {
