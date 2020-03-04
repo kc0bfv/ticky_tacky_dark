@@ -30,11 +30,11 @@
 #header-text {
     font-family: "Ubuntu-Titling", "Ubuntu", Roboto, sans-serif;
     font-weight: bold;
-    font-size: 8vw;
+    font-size: 7vw;
     text-shadow: 0px 0px 10px black, 0px 0px 10px black, 0px 0px 10px black, 0px 0px 10px black;
     color: white;
     position: absolute;
-    bottom: -2vw;
+    bottom: -1.2vw;
     left: 0vw;
 }
 
