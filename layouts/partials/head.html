@@ -24,6 +24,9 @@
 <!--My CSS-->
 <link rel="stylesheet" href="{{ "css/myscreen.css" | relURL }}" type="text/css" media="screen">
 <link rel="stylesheet" href="{{ "css/myprint.css" | relURL }}" type="text/css" media="print">
+{{ range .Params.css }}
+<link rel="stylesheet" type="text/css"  href="{{ . }}">
+{{ end }}
 <meta name="theme-color" content="black">
 {{- template "_internal/google_analytics_async.html" . }}
 
