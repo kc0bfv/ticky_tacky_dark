@@ -4,6 +4,10 @@ This is a multi-page theme, where the list page displays a set of image buttons 
 
 Preview at <https://kc0bfv.github.io/ticky_tacky_dark>
 
+Sites based on this theme:
+* https://pocumtuck.org/
+* https://notmet.net
+
 ## Configuration
 
 The exampleSite demonstrates the features unique to this theme.  In your site config params section the following extra parameters are supported:
