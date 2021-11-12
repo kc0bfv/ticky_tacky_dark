@@ -17,13 +17,6 @@ Hugo ships with several [Built-in Shortcodes](https://gohugo.io/content-manageme
 <!--more-->
 ---
 
-## Instagram Simple Shortcode
-
-{{< instagram_simple BGvuInzyFAe hidecaption >}}
-
-
----
-
 ## YouTube Privacy Enhanced Shortcode
 
 {{< youtube ZJthWmvUzzc >}}
@@ -33,7 +26,7 @@ Hugo ships with several [Built-in Shortcodes](https://gohugo.io/content-manageme
 
 ## Twitter Simple Shortcode
 
-{{< twitter_simple 1085870671291310081 >}}
+{{< twitter_simple user="DesignReviewed" id="1085870671291310081" >}}
 
 ---
 
