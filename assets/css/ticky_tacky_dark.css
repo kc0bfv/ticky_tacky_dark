@@ -7,7 +7,7 @@
 /* Make my own styles up */
 @font-face {
     font-family: "Ubuntu-Titling";
-    src: url("../font/ubuntu-titling/UbuntuTitling-Bold.ttf") format("truetype");
+    src: url("../font/UbuntuTitling-Bold.ttf") format("truetype");
 }
 
 .top-section {
@@ -43,4 +43,49 @@ a:hover { text-decoration: none; }
 
 body {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    background:black;
+    color: #ddd;
+}
+
+pre {
+    color: #ddd;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #eee;
+}
+
+ul.navbar a:focus, ul.navbar a:hover {
+    color: #00243d;
+}
+ul.navbar a {
+    color: #00497a;
+}
+
+div.imgbtntxt a:focus, div.imgbtntxt a:hover {
+    color: #09f;
+}
+a:focus, a:hover {
+    color: #7cf;
+}
+a {
+    color: #09f;
+}
+.loud {
+    color: #fff;
+}
+.box {
+    color: #222;
+    background: #e5eCf9;
+}
+
+@media print {
+    body { background:white; color: #000; }
+    pre { color: #000; }
+    h1, h2, h3, h4, h5, h6 { color: #000; }
+    a:focus, a:hover { color: #33f; }
+    a { color:#33f; }
+    .loud { color: #000; }
+    .box { color: #000; }
+    .navbar { display: none; }
 }
