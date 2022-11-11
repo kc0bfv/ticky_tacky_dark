@@ -21,19 +21,15 @@
 
 <meta name="robots" content="index,follow">
 <meta name="referrer" content="origin-when-cross-origin">
-
-
-<meta name="generator" content="Hugo 0.89.2" />
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-<link rel="stylesheet" href="/ticky_tacky_dark/css/myscreen.css" type="text/css" media="screen">
-<link rel="stylesheet" href="/ticky_tacky_dark/css/myprint.css" type="text/css" media="print">
-
 <meta name="theme-color" content="black">
 
-<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+
+
+
+<meta name="generator" content="Hugo 0.105.0">
+
+<link rel="stylesheet" href="/ticky_tacky_dark/css/custom.min.434d878244725c63e8bb3920d68a315d2aa4234915a33e045fe01ad3c2838617.css" integrity="sha256-Q02HgkRyXGPouzkg1ooxXSqkI0kVoz4EX&#43;Aa08KDhhc="/>
 
 <noscript>
     <style>
@@ -53,43 +49,31 @@
 </noscript>
 
 <script>
-    
-    function randomHeaderImg() {
-        let images = ["https://kc0bfv.github.io/ticky_tacky_dark/img/header01.jpg","https://kc0bfv.github.io/ticky_tacky_dark/img/header02.jpg"];
-        let img_ind = Math.ceil(Math.random() * images.length) - 1;
-        let sel_url = images[img_ind]
-        let img = new Image();
+    function randomImg(dest_elem, images) {
+        const img_ind = Math.ceil(Math.random() * images.length) - 1;
+        const sel_url = images[img_ind]
+        const img = new Image();
         img.onload = function() {
-            function set_img(old_onload) {
-                let element = document.getElementById("headerimg");
+            function set_img() {
+                const element = document.getElementById(dest_elem);
                 element.src = sel_url;
-                if( old_onload ){ old_onload() }
             }
-            if( document.readyState === "complete" ) { set_img() }
-            else { window.onload = set_img(window.onload) }
+            if( document.readyState != "loading" ) { set_img() }
+            else { window.addEventListener("load", set_img); }
         }
         img.src = sel_url;
     }
-    randomHeaderImg();
+    
+        randomImg(
+            dest_elem = "headerimg",
+            images = ["https://kc0bfv.github.io/ticky_tacky_dark/img/header01.jpg","https://kc0bfv.github.io/ticky_tacky_dark/img/header02.jpg"]
+        );
     
     
-    function randomSideImg() {
-        let images = ["https://kc0bfv.github.io/ticky_tacky_dark/img/cool01.jpg"];
-        let img_ind = Math.ceil(Math.random() * images.length) - 1;
-        let sel_url = images[img_ind]
-        let img = new Image();
-        img.onload = function() {
-            function set_img(old_onload) {
-                let element = document.getElementById("sideimage");
-                element.src = sel_url;
-                if( old_onload ){ old_onload() }
-            }
-            if( document.readyState === "complete" ) { set_img() }
-            else { window.onload = set_img(window.onload) }
-        }
-        img.src = sel_url;
-    }
-    randomSideImg();
+        randomImg(
+            dest_elem = "sideimage",
+            images = ["https://kc0bfv.github.io/ticky_tacky_dark/img/cool01.jpg"]
+        );
     
 </script>
 </head>
@@ -116,9 +100,9 @@
 <p>The <a href="http://www.emoji-cheat-sheet.com/">Emoji cheat sheet</a> is a useful reference for emoji shorthand codes.</p>
 <hr>
 <p><strong>N.B.</strong> The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">.emoji {
-font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols;
-}</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>.emoji {
+</span></span><span style="display:flex;"><span>font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 
 <details>
     <summary>This demonstrates the dropdown shortcode.  Click this.</summary>

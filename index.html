@@ -19,22 +19,18 @@
 
 <meta name="robots" content="index,follow">
 <meta name="referrer" content="origin-when-cross-origin">
+<meta name="theme-color" content="black">
 
 
-<meta name="generator" content="Hugo 0.89.2" />
+
+
+
+<meta name="generator" content="Hugo 0.105.0">
+
 
 <link href="/ticky_tacky_dark/index.xml" rel="alternate" type="application/rss+xml" title="Ticky Tacky Dark" />
 <link href="/ticky_tacky_dark/index.xml" rel="feed" type="application/rss+xml" title="Ticky Tacky Dark" />
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-<link rel="stylesheet" href="/ticky_tacky_dark/css/myscreen.css" type="text/css" media="screen">
-<link rel="stylesheet" href="/ticky_tacky_dark/css/myprint.css" type="text/css" media="print">
-
-<meta name="theme-color" content="black">
-
-<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/ticky_tacky_dark/css/custom.min.434d878244725c63e8bb3920d68a315d2aa4234915a33e045fe01ad3c2838617.css" integrity="sha256-Q02HgkRyXGPouzkg1ooxXSqkI0kVoz4EX&#43;Aa08KDhhc="/>
 
 <noscript>
     <style>
@@ -49,24 +45,25 @@
 </noscript>
 
 <script>
-    
-    function randomHeaderImg() {
-        let images = ["https://kc0bfv.github.io/ticky_tacky_dark/img/header01.jpg","https://kc0bfv.github.io/ticky_tacky_dark/img/header02.jpg"];
-        let img_ind = Math.ceil(Math.random() * images.length) - 1;
-        let sel_url = images[img_ind]
-        let img = new Image();
+    function randomImg(dest_elem, images) {
+        const img_ind = Math.ceil(Math.random() * images.length) - 1;
+        const sel_url = images[img_ind]
+        const img = new Image();
         img.onload = function() {
-            function set_img(old_onload) {
-                let element = document.getElementById("headerimg");
+            function set_img() {
+                const element = document.getElementById(dest_elem);
                 element.src = sel_url;
-                if( old_onload ){ old_onload() }
             }
-            if( document.readyState === "complete" ) { set_img() }
-            else { window.onload = set_img(window.onload) }
+            if( document.readyState != "loading" ) { set_img() }
+            else { window.addEventListener("load", set_img); }
         }
         img.src = sel_url;
     }
-    randomHeaderImg();
+    
+        randomImg(
+            dest_elem = "headerimg",
+            images = ["https://kc0bfv.github.io/ticky_tacky_dark/img/header01.jpg","https://kc0bfv.github.io/ticky_tacky_dark/img/header02.jpg"]
+        );
     
     
 </script>
