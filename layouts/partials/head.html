@@ -55,9 +55,9 @@
 
 <script>
     function randomImg(dest_elem, images) {
-        let img_ind = Math.ceil(Math.random() * images.length) - 1;
-        let sel_url = images[img_ind]
-        let img = new Image();
+        const img_ind = Math.ceil(Math.random() * images.length) - 1;
+        const sel_url = images[img_ind]
+        const img = new Image();
         img.onload = function() {
             function set_img() {
                 const element = document.getElementById(dest_elem);
