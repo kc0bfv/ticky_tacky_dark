@@ -81,7 +81,7 @@
     {{ end }}
     {{ with .Params.images }}
         randomImg(
-            dest_elem = "headerimg",
+            dest_elem = "sideimage",
             images = [
                 {{- $last_elem := sub (len .) 1 -}}
                 {{ range $index, $component := . -}}
